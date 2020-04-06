@@ -4,26 +4,39 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - SAPPHIRO SOFTWARE CONTABLE</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        
+        #brand-image {
+            height: 32px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-image=">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="#">
+                    <img src="~/Views/Shared/LOGO-SAPPHIRO10e40bdc92d2375575af2a3de58a3fe259ca355e9aa071cf72adb945feab59fe.png"  />
+                    @Html.ActionLink("SAPPHIRO", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </a>
+                
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("INICIO", "Index", "Home")</li>
+                    <li>@Html.ActionLink("CONTACTANOS", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("LOGIN", "About", "Home", null, new { @class = "btn btn-primary btn-lg"})</li>
+                   
                 </ul>
             </div>
         </div>
@@ -32,7 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - SAPPHIRO SOFTWARE CONTABLE</p>
         </footer>
     </div>
 
