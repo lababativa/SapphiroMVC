@@ -13,11 +13,11 @@
             background-color: #ffffff;
             border-radius: 50px;
         }
+        
         .navbar {
             min-height: 100px;
             border-color: white;
             background-image: linear-gradient( 180deg, #B9BDF3, #ffffff) ;
-            
         }
     </style>
 </head>
@@ -32,13 +32,18 @@
                     <span class="icon-bar"></span>
 
                 </button>
-                <a class="navbar-brand " href="#"><img src="Imagenes/LOGO-SAPPHIRO.png" height=65px /></a>
+                
 
             </div>
             <div class="navbar-collapse collapse row">
+                <div class="col-lg-1">
+                    <h1 class="text-hide"></h1>
+                    <ul class="nav navbar-nav navbar-left ">
+                        <li><img src="~/Imagenes/LOGO-SAPPHIRO.png" height= 65px ></li></ul>
+                </div>
                 <div class="col-lg-11">
+                    <h1 class="text-hide"></h1>
                     <ul class="nav navbar-nav navbar-right ">
-                        <h1 class="text-hide"></h1>
                         <li>@Html.ActionLink("INICIO", "Index", "Home")</li>
                         <li>@Html.ActionLink("CONTACTANOS", "Contact", "Home")</li>
                         <li>@Html.ActionLink("LOGIN", "Login", "Home", null, new { @class = "btn btn-primary" })</li>
