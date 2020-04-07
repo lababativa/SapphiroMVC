@@ -13,16 +13,16 @@ namespace SapphiroMVC.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Login";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contacto con el software";
 
             return View();
         }
