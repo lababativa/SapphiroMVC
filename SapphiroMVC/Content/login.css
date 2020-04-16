@@ -33,3 +33,14 @@
     font-size: 40px;
     color: #707070;
 }
+.btn-ingresar {
+    background-color: #D9DBF9;
+    font: bold 40px Liquid Amber DEMO;
+    border-color: transparent;
+    height: 60px;
+    width: 300px;
+}
+.texto-boton {
+    text-decoration: none;
+    color: black;
+}
