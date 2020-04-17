@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null;
+
 }
 <head>
     <title>LOGIN SAPPHIRO</title>
@@ -12,40 +13,32 @@
                 <img src="~/Imagenes/LOGO-SAPPHIRO.png" height="190px" />
                 <h1 class="active">BIENVENIDO A SAPPHIRO</h1>
                 <div class="campos_login">
-                    <table class="col-lg-6">
-                        <tr>
-                            <td class="label">
-                                <p>USUARIO:</p>
-                                <p>CONTRASEÑA:</p>
-                            </td>
-                            <td>
-                                <form action="">
+                    <form action="Verify" method="POST">
+                        <table class="col-lg-6">
+                            <tr>
+                                <td class="label">
+                                    <p>USUARIO:</p>
+                                    <p>CONTRASEÑA:</p>
+                                </td>
+                                <td>
                                     <br />
                                     <input type="text" class="field" /><br />
-                                    <br />
-                                    <br />
-                                    <br />
+                                    <br />  <br />  <br />
                                     <input type="password" class="field" />
-                                    <br />
-                                </form>
-                            </td>
-                        </tr>
-                    </table>
-                    <a class="link" href="#">OLVIDÉ MI CONTRASEÑA</a>
-                </div>
-                <br />
-                <br />
-                <br />
-                <div>
-                    <button class="btn-ingresar">
-                        <a class="texto-boton"href="#">INICIAR SESIÓN</a>
-                    </button>
+                                    <br /> <br />
+                                </td>
+                            </tr>
+                        </table>
+                        <a class="link" href="#">OLVIDÉ MI CONTRASEÑA</a>
+                        <br /> <br />
+                        <input class="btn-ingresar" type="submit" value="INICIAR SESIÓN" />
+                    </form>
                 </div>
             </center>
+            <br />  <br /> <br /> <br /> <br /> <br /> <br />
             <footer>
-                <p><br />&copy; @DateTime.Now.Year - SAPPHIRO SOFTWARE CONTABLE</p>
+            <p><br />&copy; @DateTime.Now.Year - SAPPHIRO SOFTWARE CONTABLE</p>
             </footer>
         </div>
     </div>
-    
 </body>
